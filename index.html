@@ -8,22 +8,39 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 <body>
-  <section class="left__container">
-    <h1 class="left__container__title">Learn to code by watching others</h1>
+  <section class="left-container">
+    <h1 class="left-container__title">Learn to code by watching others</h1>
 
-    <p class="left__container__text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+    <p class="left-container__text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
   </section>
 
-  <section class="right__container">
-    <a href="#" class="right__container__link"><strong>Try it free 7 days</strong> then $20/mo. thereafter</a>
+  <section class="right-container">
+    <a href="#" class="right-container__link"><strong>Try it free 7 days</strong> then $20/mo. thereafter</a>
 
-    <form class="right__container__form">
-      <input type="text" name="text" class="" placeholder="First Name">
-      <input type="text" name="text" class="" placeholder="Last Name">
-      <input type="email" name="email" class="" placeholder="Email Address">
-      <input type="password" name="password" class="" placeholder="Password">
-      <input type="submit" value="Claim your free trial"></input>
-      <p class="right__container__text">By clicking the button, you are agreeing to our Terms and Services</p>
+    <form class="right-container__form">
+      <div class="form__input-container">
+        <input type="text" name="text" class="" placeholder="First Name"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+        <small class="input-container__error input-container__error--active">First Name cannot be empty</small>
+      </div>
+
+      <div class="form__input-container">
+        <input type="text" name="text" class="" placeholder="Last Name"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+        <small class="input-container__error input-container__error--active">Last Name cannot be empty</small>
+      </div>
+
+      <div class="form__input-container">
+        <input type="email" name="email" class="" placeholder="Email Address"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+        <small class="input-container__error input-container__error--active">Looks like this is not an email</small>
+      </div>
+
+      <div class="form__input-container">
+        <input type="password" name="password" class="" placeholder="Password"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+        <small class="input-container__error input-container__error--active">Password cannot be empty</small>
+      </div>
+
+      <input type="submit" value="CLAIM YOUR FREE TRIAL"></input>
+
+      <p class="right-container__text">By clicking the button, you are agreeing to our <strong class="right-container__strong">Terms and Services</strong></p>
     </form>
   </section>
   <script src="src/index.js"></script>

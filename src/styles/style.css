@@ -11,13 +11,13 @@ body {
     background-image: url('/images/bg-intro-desktop.png');
     background-color: #ff7a7a;
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-columns: 0.5fr 500px 55px 500px 0.5fr;
     grid-template-areas: 
-    ". section1 section2 .";
+    ". section1 . section2 .";
     height: 100vh;
 }
 
-.left__container{
+.left-container{
     grid-area: section1;
     display: flex;
     flex-direction: column;
@@ -25,18 +25,19 @@ body {
     align-items: center;
     min-height: 500px;
     color: white;
+    gap: 25px;
 }
 
-.left__container__title{
+.left-container__title{
     font-size: 3rem;
     line-height: 1.1;
 }
 
-.left__container__text{
+.left-container__text{
     font-size: 1rem;
 }
 
-.right__container{
+.right-container{
     grid-area: section2;
     display: flex;
     justify-content: center;
@@ -45,22 +46,90 @@ body {
     min-height: 500px;
 }
 
-.right__container__link{
+.right-container__link{
     background-color: #6055a5;
     text-align: center;
-    padding: 10px 25px;
+    padding: 15px 25px;
     margin-bottom: 20px;
     color: white;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 400;
     font-size: 0.9rem;
+    width: 100%;
+    box-shadow: 0 7px 0px rgba(0, 0, 0, 0.151);
 }
 
-.right__container__form{
+.right-container__form{
     background-color: white;
     display: flex;
     flex-direction: column;
+    min-height: 500px;
+    width: 100%;
+    padding: 40px;
+    justify-content: space-around;
+    border-radius: 8px;
+}
+
+.form__input-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    font-style: italic;
+    gap: 5px;
+}
+
+input{
+    position: relative;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #b9b6d3;
+    padding: 0 30px;
+    font-weight: 600;
+}
+
+svg{
+    position: absolute;
+    align-self: flex-end;  
+}
+
+input::placeholder{
+    font-weight: 600;
+}
+
+input:focus-within{
+    border: 1px solid #3e3c49;
+    outline: 0;
+}
+
+.input-container__error{
+    text-align: end;
+}
+
+input[type="submit"]{
+    margin: 10px 0;
+    background-color: #38cc8c;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 1px solid #38cc8c;
+    box-shadow: 0 4px 0px #30b179;
+    cursor: pointer;
+    transition: .3s;
+}
+
+input[type="submit"]:hover{
+    background-color: #77daaf;
+}
+
+.right-container__text{
+    text-align: center;
+    font-size: 0.65rem;
+    color: #b9b6d3;  
+}
+
+.right-container__strong{
+    color: #ff7a7a;
 }
 
 
