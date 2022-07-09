@@ -19,28 +19,49 @@
 
     <form class="right-container__form">
       <div class="form__input-container">
-        <input type="text" name="text" class="" placeholder="First Name"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
-        <small class="input-container__error input-container__error--active">First Name cannot be empty</small>
+        <input type="text" name="text" class="input-container__firstname" placeholder="First Name">
+        
+        <i class="input-container__icon">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+        </i>
+        
+        <small class="input-container__error">First Name cannot be empty</small>
       </div>
 
       <div class="form__input-container">
-        <input type="text" name="text" class="" placeholder="Last Name"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
-        <small class="input-container__error input-container__error--active">Last Name cannot be empty</small>
+        <input type="text" name="text" class="input-container__lastname" placeholder="Last Name">
+        
+        <i class="input-container__icon">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+        </i>
+        
+        <small class="input-container__error">Last Name cannot be empty</small>
       </div>
 
       <div class="form__input-container">
-        <input type="email" name="email" class="" placeholder="Email Address"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
-        <small class="input-container__error input-container__error--active">Looks like this is not an email</small>
+        <input type="email" name="email" class="input-container__email" placeholder="Email Address">
+        
+        <i class="input-container__icon">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+        </i>
+        
+        <small class="input-container__error">Looks like this is not an email</small>
       </div>
 
       <div class="form__input-container">
-        <input type="password" name="password" class="" placeholder="Password"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
-        <small class="input-container__error input-container__error--active">Password cannot be empty</small>
+        <input type="password" name="password" class="input-container__password" placeholder="Password">
+        
+        <i class="input-container__icon">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+        </i>
+        
+        <small class="input-container__error">Password cannot be empty</small>
       </div>
 
-      <input type="submit" value="CLAIM YOUR FREE TRIAL"></input>
-
-      <p class="right-container__text">By clicking the button, you are agreeing to our <strong class="right-container__strong">Terms and Services</strong></p>
+      <div>
+        <input type="submit" value="CLAIM YOUR FREE TRIAL" class="input-container__submit"></input>
+        <p class="right-container__text">By clicking the button, you are agreeing to our <strong class="right-container__strong">Terms and Services</strong></p>
+      </div>
     </form>
   </section>
   <script src="src/index.js"></script>
